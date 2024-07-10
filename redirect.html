@@ -1,0 +1,11 @@
+$(if http-status == 302)Hotspot redirect$(endif)
+$(if http-header == "Location")$(link-redirect)$(endif)
+<html>
+<head>
+<meta http-equiv="refresh" content="0; url=$(link-redirect)">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+</head>
+<body>
+</body>
+</html>
